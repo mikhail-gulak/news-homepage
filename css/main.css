@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+
+:root {
+  /* COLORS */
+  --orange: hsl(35, 77%, 62%);
+  --red: hsl(5, 85%, 63%);
+  --white: hsl(36, 100%, 99%);
+  --gray: hsl(233, 8%, 79%);
+  --darkgray: hsl(236, 13%, 42%);
+  --darkblue: hsl(240, 100%, 5%);
+
+  /* FONT SIZING */
+  /* 14.00px → 16.00px */
+  --sm: clamp(0.88rem, calc(0.83rem + 0.19vw), 1rem);
+  /* 18.00px → 24.00px */
+  --md: clamp(1.13rem, calc(0.99rem + 0.56vw), 1.5rem);
+  /* 24.00px → 32.00px */
+  --lg: clamp(1.5rem, calc(1.32rem + 0.75vw), 2rem);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* Inter - main font; Arial - fallback font */
+  font-family: "Inter", "Arial", sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: var(--lg);
+  color: var(--darkblue);
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 800;
+}
