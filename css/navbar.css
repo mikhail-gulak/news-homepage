@@ -11,8 +11,8 @@
 
 .navbar__brand,
 .navbar__btn {
-  /* 48px → 64px */
-  inline-size: calc(var(--lg) * 2);
+  /* 48px → 72px */
+  inline-size: calc(var(--xl) * 1.5);
   aspect-ratio: 2/1;
 }
 

@@ -12,10 +12,12 @@
   /* FONT SIZING */
   /* 14.00px → 16.00px */
   --sm: clamp(0.88rem, calc(0.83rem + 0.19vw), 1rem);
+  /* 16.00px → 18.00px */
+  --md: clamp(1rem, calc(0.96rem + 0.19vw), 1.13rem);
   /* 18.00px → 24.00px */
-  --md: clamp(1.13rem, calc(0.99rem + 0.56vw), 1.5rem);
-  /* 24.00px → 32.00px */
-  --lg: clamp(1.5rem, calc(1.32rem + 0.75vw), 2rem);
+  --lg: clamp(1.13rem, calc(0.99rem + 0.56vw), 1.5rem);
+  /* 40.00px → 48.00px */
+  --xl: clamp(2.5rem, calc(2.32rem + 0.75vw), 3rem);
 }
 
 * {
@@ -72,6 +74,6 @@ img {
 
 @media screen and (min-width: 920px) {
   .container {
-    padding: 5% 10%;
+    padding: 5% 20%;
   }
 }
