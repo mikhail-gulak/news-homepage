@@ -37,6 +37,7 @@ li {
 
 a {
   text-decoration: none;
+  transition: all 0.2s ease-in-out;
 }
 
 h1 {
@@ -69,10 +70,12 @@ img {
   flex-direction: column;
   /* (32px / 1440) * 100 → 2.22% */
   gap: max(2rem, 2.22%);
-  padding: 2rem 1rem;
+  /* (16px / 375px) * 100 → 4.26% */
+  /* (32px / 375px) * 100 → 8.53% */
+  padding: 4.26% 8.53%;
 }
 
-@media screen and (min-width: 920px) {
+@media screen and (min-width: 720px) {
   .container {
     padding: 5% 20%;
   }

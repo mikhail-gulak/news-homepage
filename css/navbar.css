@@ -79,7 +79,6 @@
   .navbar__link {
     font-size: var(--sm);
     color: var(--darkgray);
-    transition: all 0.2s ease-out;
   }
 
   .navbar__link:hover {

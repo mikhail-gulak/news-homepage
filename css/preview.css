@@ -1,7 +1,7 @@
 main {
   display: grid;
   gap: 2rem;
-  grid-template-rows: 1.5fr 1fr;
+  grid-template-rows: 1.5fr max-content;
 }
 
 .preview {
@@ -33,7 +33,6 @@ main {
   text-transform: uppercase;
   color: var(--white);
   background-color: var(--red);
-  transition: all 0.2s ease-in-out;
 }
 
 .preview__link:hover {
@@ -47,16 +46,18 @@ main {
   }
 
   .preview {
-    grid-column: span 2;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, max-content);
     align-items: start;
   }
 
+  .preview,
   .preview__hero {
     grid-column: span 2;
-    max-inline-size: 100%;
+  }
+
+  .preview__hero {
     aspect-ratio: initial;
   }
 
