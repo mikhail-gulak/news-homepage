@@ -53,7 +53,12 @@
 }
 
 .navbar__link {
+  color: var(--darkgray);
   font-size: var(--md);
+}
+
+.navbar__link:hover {
+  color: var(--red);
 }
 
 @media screen and (min-width: 920px) {
@@ -74,14 +79,5 @@
   .navbar__container,
   .navbar__menu {
     flex-direction: row;
-  }
-
-  .navbar__link {
-    font-size: var(--sm);
-    color: var(--darkgray);
-  }
-
-  .navbar__link:hover {
-    color: var(--red);
   }
 }
