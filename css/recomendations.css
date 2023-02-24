@@ -1,0 +1,45 @@
+.recomendations {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: start;
+  gap: 2rem;
+}
+
+.article--recomended {
+  inline-size: max(325px, 31%);
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  gap: 1rem;
+}
+
+.article__hero {
+  object-fit: cover;
+  grid-column: span 1;
+}
+
+.article__content {
+  grid-column: 2/3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.article__suptitle {
+  font-size: var(--xl);
+  font-weight: 800;
+  color: var(--gray);
+}
+
+.article--recomended .article__title:hover {
+  color: var(--red);
+}
+
+@media screen and (min-width: 1024px) {
+  .article--recomended {
+    margin-inline: auto;
+  }
+
+  .article__suptitle {
+    font-size: var(--lg);
+  }
+}
