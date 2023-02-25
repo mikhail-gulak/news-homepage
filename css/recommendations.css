@@ -1,11 +1,11 @@
-.recomendations {
+.recommendations {
   display: flex;
   flex-flow: row wrap;
   align-items: start;
   gap: 2rem;
 }
 
-.article--recomended {
+.article--recommended {
   inline-size: max(325px, 31%);
   display: grid;
   grid-template-columns: 0.5fr 1fr;
@@ -30,12 +30,12 @@
   color: var(--darkgray);
 }
 
-.article--recomended .article__title:hover {
+.article--recommended .article__title:hover {
   color: var(--red);
 }
 
 @media screen and (min-width: 1024px) {
-  .article--recomended {
+  .article--recommended {
     margin-inline: auto;
   }
 
