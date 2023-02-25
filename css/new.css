@@ -48,3 +48,7 @@
   color: var(--darkgray);
   line-height: 1.5;
 }
+
+.article--new .article__body {
+  color: var(--gray);
+}

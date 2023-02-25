@@ -27,7 +27,7 @@
 .article__suptitle {
   font-size: var(--xl);
   font-weight: 800;
-  color: var(--gray);
+  color: var(--darkgray);
 }
 
 .article--recomended .article__title:hover {
